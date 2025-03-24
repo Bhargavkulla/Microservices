@@ -37,7 +37,7 @@ services:
 
   user-service:
     build: ./user-service
-    image: prabsin/user-service
+    image: bhargavakulla/user-service
     container_name: user-service
     depends_on:
       - postgres
@@ -52,7 +52,7 @@ services:
 
   product-service:
     build: ./product-service
-    image: prabsin/product-service
+    image: bhargavakulla/product-service
     container_name: product-service
     depends_on:
       - postgres
@@ -67,7 +67,7 @@ services:
 
   order-service:
     build: ./order-service
-    image: prabsin/order-service
+    image: bhargavakulla/order-service
     container_name: order-service
     depends_on:
       - postgres
@@ -84,7 +84,7 @@ services:
   payment-service:
     build: ./payment-service
     container_name: payment-service
-    image: prabsin/payment-service
+    image: bhargavakulla/payment-service
     depends_on:
       - kafka
     ports:

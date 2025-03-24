@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: prabsin/microservices_product-service:latest
+          image: bhargavakulla/microservices_product-service:latest
           ports:
             - containerPort: 8083
           env:
